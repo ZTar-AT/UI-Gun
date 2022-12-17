@@ -1,0 +1,313 @@
+:root {
+    --font: "Prompt", sans-serif;
+    --font_size: 14px;
+    --font_size_tagGun: 10px;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    /* background-color: aliceblue; */
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 15% 21% 21% 25% 15%;
+    /* ลบ  grid-gap ยกเว้นตัวหน้า */
+    grid-gap: 1%;
+    overflow: hidden;
+}
+
+.tagName {
+    padding: 3px 0px 0px 0px;
+    font-family: var(--font);
+    font-size: var(--font_size);
+    color: white;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    filter: opacity(0.8);
+    box-shadow: 0 1px white;
+    background-color: #30b373a4;
+}
+
+.containerlist {
+
+    width: 100%;
+    display: grid;
+    grid-template-rows: 22px auto;
+    grid-gap: 1%;
+
+}
+
+.containerlist_2rows {
+
+    width: 100%;
+    display: grid;
+    grid-template-rows: 22px auto auto 22px auto;
+    grid-gap: 1%;
+
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    grid-template-rows: auto;
+}
+
+
+.text {
+    font-family: var(--font);
+    font-size: var(--font_size_tagGun);
+    color: white;
+    position: relative;
+    left: 8px;
+}
+
+/* icon เงินตรา */
+.moneyText {
+    position: relative;
+    left: 15px;
+    font-family: var(--font);
+    font-size: var(--font_size_tagGun);
+    font-weight: 900;
+    color: white;
+
+}
+
+.moneyText::before {
+    position: absolute;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    left: -10px;
+    top: 2px;
+    content: '';
+    width: var(--font_size_tagGun);
+    height: var(--font_size_tagGun);
+    background-color: white;
+}
+
+
+.SIDEARMS1.SIDEARMS2.SIDEARMS3.SIDEARMS4.SIDEARMS5 .SMGS1.SMGS2 .SHOTGUNS1.SHOTGUNS2.RIFLES1.RIFLES2.RIFLES3.RIFLES4.SNIPER1.SNIPER2.MACHINE1.MACHINE2.ARMOR1.ARMOR2 {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* ปืนพก */
+.SIDEARMS1 {
+
+    background: url(img/SIDEARMS/1.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 20%;
+    position: relative;
+
+    /* เลือกปืน กำหนดสี */
+    box-shadow:  #00ffaa  0px 0px 0px 2px inset;
+    background-color: #10cb8cb4;
+
+
+
+}
+
+.SIDEARMS2 {
+    background: url(img/SIDEARMS/2.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 20%;
+    background-color: #2c2c2cb4;
+    position: relative;
+}
+
+.SIDEARMS3 {
+    background: url(img/SIDEARMS/3.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 20%;
+    background-color: #2c2c2cb4;
+    position: relative;
+}
+
+.SIDEARMS4 {
+    background: url(img/SIDEARMS/4.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 20%;
+    background-color: #2c2c2cb4;
+    position: relative;
+}
+
+.SIDEARMS5 {
+    background: url(img/SIDEARMS/5.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 20%;
+    background-color: #2c2c2cb4;
+    position: relative;
+}
+
+
+/* ปืนกลมือ */
+.SMGS1 {
+
+    background: url(img/SMGS/1.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 20%;
+    background-color: #2c2c2cb4;
+    position: relative;
+
+}
+
+.SMGS2 {
+
+    background: url(img/SMGS/2.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 20%;
+    background-color: #2c2c2cb4;
+    position: relative;
+
+}
+
+/* ปืนลูกซอง */
+.SHOTGUNS1 {
+    background: url(img/SHOTGUNS/2.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 20%;
+    background-color: #2c2c2cb4;
+    position: relative;
+}
+
+.SHOTGUNS2 {
+    background: url(img/SHOTGUNS/1.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 20%;
+    background-color: #2c2c2cb4;
+    position: relative;
+}
+
+/* ปืนไรเฟิล */
+.RIFLES1 {
+    background: url(img/RIFLES/1.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 20%;
+    background-color: #2c2c2cb4;
+    position: relative;
+}
+
+.RIFLES2 {
+    background: url(img/RIFLES/2.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 20%;
+    background-color: #2c2c2cb4;
+    position: relative;
+}
+
+.RIFLES3 {
+    background: url(img/RIFLES/3.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 20%;
+    background-color: #2c2c2cb4;
+    position: relative;
+}
+
+.RIFLES4 {
+    background: url(img/RIFLES/4.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 20%;
+    background-color: #2c2c2cb4;
+    position: relative;
+}
+
+/* ปืนสไนเปอร์ไรเฟืล */
+.SNIPER1 {
+    background: url(img/SNIPER/1.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 20%;
+    background-color: #2c2c2cb4;
+    position: relative;
+}
+
+.SNIPER2 {
+    background: url(img/SNIPER/2.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 20%;
+    background-color: #2c2c2cb4;
+    position: relative;
+}
+
+/* ปืนกล */
+.MACHINE1 {
+    background: url(img/MACHINE/1.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 20%;
+    background-color: #2c2c2cb4;
+    position: relative;
+}
+
+.MACHINE2 {
+    background: url(img/MACHINE/2.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 20%;
+    background-color: #2c2c2cb4;
+    position: relative;
+}
+
+/* โล่ */
+.ARMOR1{
+    background: url(img/ARMOR/1.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 30%;
+    background-color: #2c2c2cb4;
+    position: relative;
+}
+.ARMOR2{
+    background: url(img/ARMOR/2.png);
+    background-size: 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 30%;
+    background-color: #2c2c2cb4;
+    position: relative;
+}
+
+.SIDEARMS1:hover,
+.SIDEARMS2:hover,
+.SIDEARMS3:hover,
+.SIDEARMS4:hover,
+.SIDEARMS5:hover,
+.SMGS1:hover,
+.SMGS2:hover,
+.SHOTGUNS1:hover,
+.SHOTGUNS2:hover,
+.RIFLES1:hover,
+.RIFLES2:hover,
+.RIFLES3:hover,
+.RIFLES4:hover,
+.SNIPER1:hover,
+.SNIPER2:hover,
+.MACHINE1:hover,
+.MACHINE2:hover,
+.ARMOR1:hover
+,.ARMOR2:hover {
+
+    background-color: #45b88eb4;
+
+}
